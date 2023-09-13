@@ -7,17 +7,29 @@ st.set_page_config(layout="wide")
 
 # Title for the web app
 st.title("Encrypt-Decrypt Text Application: Caesar Cipher Algorithm")
-# st.markdown("<strong>The application reads the first <em>ROW</em> in your file as the <em>Column Title (Variable Name)</em> for each <em>COLUMN</em> in the dataset. So make sure that the first <em>ROW</em> in your file is the name of each <em>Column Title (Variable Name)</em> in the dataset. Also, make sure that every cell in your file is Valid (all cells are filled and there are no duplicates) for better analysis.</strong>", unsafe_allow_html=True)
-# st.markdown("<strong>This application allows you to carry out linear regression analysis, both single linear regression and multiple linear regression. The analysis results obtained, namely the regression model and all the visualizations displayed, can help you predict unknown data values using other related and known data values. This really helps businesses, industry, trade, and other sectors.</strong>", unsafe_allow_html=True)
+st.markdown('''
+    With this application, you can Encrypt and Decrypt text using the Caesar Cipher algorithm, 
+    which is a cryptographic technique that is carried out by substituting each letter of the 
+    message to be encrypted by shifting the order as the key. This algorithm is no longer very 
+    good to apply because it is easy to guess, but the algorithm is very Easy to Understand, 
+    Simple, Fast, and Can be Used as Simple Security for purposes such as storing username 
+    and password, sending secret messages, and others.
+    '''
+    , unsafe_allow_html = True)
 
 # Build tabs
 tab1, tab2 = st.tabs(["Caesar Cipher 1", "Caesar Cipher 2"])
 
 # CAESAR CIPHER 1
 with tab1:
-    st.subheader("Caesar Cipher 1")
-    st.markdown('<p style="color: gray;"> User needs to define the key for shifting characters. A "+" shift means the character shifts to the Right. "-" means the character shifts to the Left. </p>', unsafe_allow_html=True)
-    checkbox = st.checkbox('See Video Example', key = "checkbox_1")
+    # st.subheader("Caesar Cipher 1")
+    st.markdown('''
+        <p style="color: gray;"> User needs to define the key for shifting characters. 
+        A "+" shift means the character shifts to the Right. "-" means the character shifts to 
+        the Left. </p>
+        '''
+        , unsafe_allow_html=True)
+    # checkbox = st.checkbox('See Video Example', key = "checkbox_1")
     # if checkbox:
     #     video_file = open('myvideo.mp4', 'rb')
     #     video_bytes = video_file.read()
@@ -81,9 +93,15 @@ with tab1:
 
 # CAESAR CIPHER 2
 with tab2:
-    st.subheader("Caesar Cipher 2")
-    st.markdown('<p style="color: gray;"> User just needs to Enter a message to Encrypt / Decrypt. The Key has been DETERMINED. If you want to see the Key, look at the source code. </p>', unsafe_allow_html=True)
-    checkbox = st.checkbox('See Video Example', key = "checkbox_2")
+    # st.subheader("Caesar Cipher 2")
+    st.markdown('''
+        <p style="color: gray;"> User just needs to Enter a message to Encrypt 
+        / Decrypt. The Key has been DETERMINED. If you want to see the Key, look at the 
+        source code. </p>
+        '''
+        , unsafe_allow_html=True)
+
+    # checkbox = st.checkbox('See Video Example', key = "checkbox_2")
     # if checkbox:
     #     video_file = open('myvideo.mp4', 'rb')
     #     video_bytes = video_file.read()
@@ -98,8 +116,30 @@ with tab2:
     # random.shuffle(key)
 
     # Save Key
-    # key = ['0', 'Y', '/', '9', 'a', 'D', 'M', 'V', 'b', 'K', '#', 'Z', 'R', '{', 'G', '%', '2', 'i', '-', 'q', '?', 'Q', '&', '`', 'U', 'P', '}', '(', 'n', '5', 'j', ',', '4', 'g', ')', 'f', 'B', 'L', 'e', 'w', 'l', 'c', 'k', '+', ']', 'S', '3', 'W', '$', 's', 'v', 'T', 'r', 'p', 'J', '8', '~', 'O', '1', '\\', 'E', 'F', '=', "'", 'X', '^', '!', 'A', '|', 'o', '_', 'N', '<', 'C', 'u', 't', '6', '>', '7', 'm', ';', '[', '.', '@', 'd', 'I', '"', 'H', 'h', ' ', 'z', ':', 'y', 'x', '*']
-    key = ['0', 'Y', '/', '9', 'a', 'D', 'M', 'V', 'b', 'K', '#', 'Z', 'R', '{', 'G', '%', '2', 'i', '-', 'q', '?', 'Q', '&', '`', 'U', 'P', '}', '(', 'n', '5', 'j', ',', '4', 'g', ')', 'f', 'B', 'L', 'e', 'w', 'l', 'c', 'k', '+', ']', 'S', '3', 'W', '$', 's', 'v', 'T', 'r', 'p', 'J', '8', '~', 'O', '1', '\\', 'E', 'F', '=', "'", 'X', '^', '!', 'A', '|', 'o', '_', 'N', '<', 'C', 'u', 't', '6', '>', '7', 'm', ';', '[', '.', '@', 'd', 'I', '"', 'H', 'h', ' ', 'z', ':', 'y', 'x', '*']
+    # key = ['0', 'Y', '/', '9', 'a', 'D', 'M', 
+    #         'V', 'b', 'K', '#', 'Z', 'R', '{', 'G', 
+    #         '%', '2', 'i', '-', 'q', '?', 'Q', '&', 
+    #         '`', 'U', 'P', '}', '(', 'n', '5', 'j', 
+    #         ',', '4', 'g', ')', 'f', 'B', 'L', 'e', 
+    #         'w', 'l', 'c', 'k', '+', ']', 'S', '3', 
+    #         'W', '$', 's', 'v', 'T', 'r', 'p', 'J', 
+    #         '8', '~', 'O', '1', '\\', 'E', 'F', '=', 
+    #         "'", 'X', '^', '!', 'A', '|', 'o', '_', 
+    #         'N', '<', 'C', 'u', 't', '6', '>', '7', 
+    #         'm', ';', '[', '.', '@', 'd', 'I', '"', 
+    #         'H', 'h', ' ', 'z', ':', 'y', 'x', '*']
+    key = ['0', 'Y', '/', '9', 'a', 'D', 'M', 
+            'V', 'b', 'K', '#', 'Z', 'R', '{', 'G', 
+            '%', '2', 'i', '-', 'q', '?', 'Q', '&', 
+            '`', 'U', 'P', '}', '(', 'n', '5', 'j', 
+            ',', '4', 'g', ')', 'f', 'B', 'L', 'e', 
+            'w', 'l', 'c', 'k', '+', ']', 'S', '3', 
+            'W', '$', 's', 'v', 'T', 'r', 'p', 'J', 
+            '8', '~', 'O', '1', '\\', 'E', 'F', '=', 
+            "'", 'X', '^', '!', 'A', '|', 'o', '_', 
+            'N', '<', 'C', 'u', 't', '6', '>', '7', 
+            'm', ';', '[', '.', '@', 'd', 'I', '"', 
+            'H', 'h', ' ', 'z', ':', 'y', 'x', '*']
 
     # See Chars and Key
     # st.write(f"chars : {chars}")
