@@ -159,7 +159,7 @@ with tab2:
         for letter in cipher_text:
             index = key.index(letter)
             plain_text += chars[index]
-        st.markdown(f"Derypted Text: <br> {plain_text}", unsafe_allow_html=True)
+        st.markdown(f"Decrypted Text: <br> {plain_text}", unsafe_allow_html=True)
 
     # Requesting text input that you want to ENCRYPTION / DECRYPTION
     text = st.text_input("Enter a message to Encrypt / Decrypt: ", key = "text_2")
