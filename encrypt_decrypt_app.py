@@ -70,7 +70,7 @@ with tab1:
                 decrypted_char = char
             decrypted_text += decrypted_char
         return decrypted_text
-    # Requesting text input that you want to ENCRYPTION / DECRYPTION
+    # Requesting text input that you want to ENCRYPT / DECRYPT
     text = st.text_input("Enter a message to Encrypt / Decrypt: ", key = "text_1")
 
     # Requesting Key value and Create Key Shift Condition (shift of Encryption_1 and Decryption_1 Functions)
