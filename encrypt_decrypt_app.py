@@ -84,12 +84,12 @@ with tab1:
     # Text Encryption Button
     if st.button("Encrypt Text", key = "Encryption_1"):
         encrypted_text = encrypt_1(text, key)
-        st.markdown(f"Teks terenkripsi: <br> {encrypted_text}", unsafe_allow_html=True)
+        st.markdown(f"Encrypted Text: <br> {encrypted_text}", unsafe_allow_html=True)
 
     # Text Decryption Button
     if st.button("Decrypt Text", key = "Decryption_1"):
         decrypted_text = decrypt_1(text, key)
-        st.markdown(f"Teks terdekripsi: <br> {decrypted_text}", unsafe_allow_html=True)
+        st.markdown(f"Decrypted Text: <br> {decrypted_text}", unsafe_allow_html=True)
 
 # CAESAR CIPHER 2
 with tab2:
